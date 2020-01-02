@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding =  "UTF-8"?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane fx:controller = "cashlog" fx:id = "logpane"
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" alignment = "center" hgap = "10" vgap = "10">
+
+<Label text = "Employee_ID: "  GridPane.rowIndex = "0" GridPane.columnIndex = "0"/>
+<Label text = "Password: "  GridPane.rowIndex = "1" GridPane.columnIndex = "0"/>
+<TextField fx:id = "uField" GridPane.rowIndex = "0" GridPane.columnIndex = "1"
+onKeyReleased = "#handleKeyReleased"/>
+<PasswordField fx:id = "pField" GridPane.rowIndex = "1" GridPane.columnIndex = "1"
+/>
+<Button fx:id = "sButton" text ="Sign In" GridPane.rowIndex ="2" GridPane.columnIndex = "1"
+onAction = "#onButtonClicked"/>
+<Button fx:id = "loginBack" text = "Back" GridPane.rowIndex ="2" GridPane.columnIndex = "2"
+onAction = "#onBackClicked"/>
+
+
+</GridPane>

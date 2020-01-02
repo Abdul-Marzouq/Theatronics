@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="APcash" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User">
+    <children>
+    	<VBox layoutX="-1.0" layoutY="-2.0" prefHeight="114.0" prefWidth="1000.0" style="-fx-background-color: #5B2C6F;" AnchorPane.topAnchor="-2.0" />
+        <ComboBox fx:id="movieSelect" layoutX="37.0" layoutY="148.0" onAction="#setMovieSelect" prefHeight="27.0" prefWidth="194.0" promptText="Search by Movie" style="-fx-background-color: white;" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="48.0">
+            <items>
+            </items>
+        </ComboBox>
+        <DatePicker fx:id = "dpicker" onAction = "#date_selected" layoutX="36.0" layoutY="205.0" promptText="Search by Date" style="-fx-background-color: white;" AnchorPane.leftAnchor="650.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="48.0" />
+        <Button fx:id="uback" layoutX="29.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#back" onMouseEntered="#onHover" onMouseExited="#onExit" style="-fx-background-color: white;" text="Back" />
+        <VBox fx:id="rooter" layoutX="27.0" layoutY="111.0" prefHeight="473.0" prefWidth="941.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="131.0" />
+    </children>
+</AnchorPane>
